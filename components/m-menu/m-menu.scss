@@ -1,29 +1,12 @@
 .m-menu {
-  @include _768 {
-    flex-direction: row;
-    margin-left: rem(25);
-    padding: 0;
-  }
-  @include _1140 {
-    margin-left: rem(64);
-  }
-
   display: flex;
   flex-direction: column;
-  padding: 0 1rem;
 
   &__link {
-    @include _768 {
-      margin: 0 rem(10) 0 0;
-      padding: 0;
-    }
-    @include _1140 {
-      margin: 0 rem(32) 0 0;
-      font-size: rem(18);
-    }
-
-    margin-bottom: rem(5);
-    padding: rem(5) 0;
+    margin: rem(10) 0;
+    font-size: rem(16);
     font-weight: 500;
+    transform: rotate(-180deg);
+    writing-mode: vertical-rl;
   }
 }

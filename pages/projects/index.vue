@@ -1,3 +1,3 @@
 <template>
-  <h3>experience</h3>
+  <h3>Projects</h3>
 </template>

@@ -2,43 +2,13 @@
 :root {
   --color-main: #fff;
   --color-second: #272727;
-  --color-body: #f7f9fd;
-  --color-grey: #eee;
-  --color-grey-light: #e3e3e1;
-  --color-yellow: #ffc846;
-  --color-yellow-light: #ffdf3a;
-  --color-blue-light: #2775b9;
-  --color-base-white: #eceff6;
-  --color-brilliant: #3cc8ec;
-  --color-pink: #eb4294;
-  --color-swiper-active: #eb4294;
-  --color-swiper: #3cc8ec;
-  --color-swiper-brilliant: #99dfe7;
-  --color-swiper-yellow: #ecb650;
-  --color-white: #fff;
-  --color-black: #272727;
+  --color-test: #eee;
+  --color-test1: #6c6c6c;
   .dark-themes {
     --color-main: #272727;
     --color-second: #fff;
-    --color-body: #555555;
-    --color-grey: #4d4d4d;
-    --color-grey-light: #333333;
-    --color-yellow: #616161;
-    --color-yellow-light: #575547;
-    --color-blue-light: #6cace4;
-    --color-base-white: #272727;
-    --color-brilliant: #272727;
-    --color-pink: #272727;
-    --color-swiper-active: #eb4294;
-    --color-swiper: #3cc8ec;
-    --color-swiper-brilliant: #99dfe7;
-    --color-swiper-yellow: #ecb650;
-    --color-white: #fff;
-    --color-black: #272727;
-    .s-header__logo-image,
-    .s-header__phone-image {
-      filter: invert(1);
-    }
+    --color-test: #747474;
+    --color-test1: #424242;
   }
 }
 /* stylelint-enable */

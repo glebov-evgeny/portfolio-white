@@ -1,209 +1,43 @@
 .s-header {
-  @include _1140 {
-    padding: rem(15) 0;
-  }
-
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  right: 0;
-  left: 0;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  min-height: rem(50);
-  padding: rem(5) 0;
-  color: var(--color-second);
-  background: var(--color-grey-light);
-  transition: 0.3s;
-
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
+  max-width: rem(40);
+  padding: var(--a-padding-x6) 0;
+  background: var(--color-main);
 
   &__logo {
-    @include _1140 {
-      max-width: rem(50);
-    }
-
-    display: flex;
-    max-width: rem(35);
+    font-size: rem(22);
+    font-weight: 600;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
   }
 
-  &__nav {
-    @include _768 {
-      position: unset;
-      height: auto;
-    }
-
-    position: fixed;
-    z-index: 10;
-    top: rem(50);
-    right: 0;
-    left: 0;
+  &__logic {
     display: flex;
-    overflow: hidden;
     flex-direction: column;
-    width: 100%;
-    height: 0;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(30);
+    height: rem(30);
     color: var(--color-second);
-    background: var(--color-grey-light);
-    transition: 0.3s;
-
-    &.active {
-      height: rem(190);
-      padding-top: rem(20);
-      border-radius: 0 0 var(--border-radius-x3) var(--border-radius-x3);
-    }
-  }
-
-  &__login {
-    @include _768 {
-      width: rem(100);
-      min-height: rem(35);
-      margin: 0 0 0 rem(5);
-    }
-    @include _1140 {
-      width: rem(125);
-      min-height: rem(40);
-      margin: 0 0 0 rem(20);
-    }
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: calc(100% - rem(32));
-    min-height: rem(40);
-    margin: rem(8) auto 0;
-    color: var(--color-main);
-    background: var(--color-second);
-    border: none;
-    border-radius: var(--border-radius-x1);
-    outline: none;
-    font-size: rem(16);
-    font-weight: 500;
-    cursor: pointer;
-  }
-
-  &__actions {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-  }
-
-  &__phone {
-    @include _1140 {
-      justify-content: flex-end;
-      width: rem(150);
-    }
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: rem(30);
-    height: rem(30);
-
-    span {
-      @include _1140 {
-        display: block;
-      }
-
-      display: none;
-      font-size: rem(18);
-      font-weight: 500;
-    }
-
-    &-image {
-      @include _1140 {
-        display: none;
-      }
-
-      max-width: rem(18);
-    }
-  }
-
-  &__theme {
-    @include _1140 {
-      margin: 0 rem(16);
-    }
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: rem(30);
-    height: rem(30);
     background: transparent;
     border: none;
     outline: none;
+    font-size: rem(16);
+    font-weight: 600;
     cursor: pointer;
 
-    &-icon {
+    &-image {
       path,
       rect {
         fill: var(--color-second);
-      }
-    }
-  }
-
-  &__lang {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: rem(30);
-    height: rem(30);
-    color: var(--color-second);
-    background: transparent;
-    border: none;
-    outline: none;
-    font-weight: 500;
-    cursor: pointer;
-  }
-
-  &__menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: rem(-10);
-    transform: translateX(rem(10));
-    flex-shrink: 0;
-
-    &-burger {
-      cursor: pointer;
-      user-select: none;
-      transition: transform 0.5s;
-      -webkit-tap-highlight-color: transparent;
-
-      .line {
-        transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-        fill: none;
-        stroke: var(--color-second);
-        stroke-width: 6.5;
-        stroke-linecap: round;
-      }
-
-      .top {
-        stroke-dasharray: 40 121;
-      }
-
-      .bottom {
-        stroke-dasharray: 40 121;
-      }
-
-      &.active {
-        transform: rotate(45deg);
-
-        .top {
-          stroke-dashoffset: -68px;
-        }
-
-        .bottom {
-          stroke-dashoffset: -68px;
-        }
       }
     }
   }
