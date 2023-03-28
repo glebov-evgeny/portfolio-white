@@ -1,0 +1,9 @@
+/* stylelint-disable */
+.s-work {
+  margin: var(--a-padding-x12) 0;
+  &__title {
+    text-align: center;
+    margin: rem(36) auto 0;
+  }
+}
+/* stylelint-enable */

@@ -1,0 +1,33 @@
+.a-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: rem(40);
+  background: var(--color-swiper);
+  border: none;
+  border-radius: var(--border-radius-x1);
+  outline: none;
+  text-align: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__label {
+    color: var(--color-main);
+    font-size: rem(14);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &--accent {
+    background: var(--color-swiper-active);
+  }
+
+  &--disabled {
+    background: var(--color-grey);
+    pointer-events: none;
+  }
+}

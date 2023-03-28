@@ -1,0 +1,24 @@
+.s-photo {
+  color: var(--color-second);
+  grid-area: photo;
+
+  &__block {
+    padding: var(--a-padding-x6);
+    background: var(--color-pink);
+    border-radius: var(--border-radius-x2);
+  }
+
+  &__image {
+    @include _1140 {
+      width: rem(280);
+      height: rem(280);
+    }
+
+    display: block;
+    width: rem(238);
+    height: rem(238);
+    margin: 0 auto;
+    background: var(--color-body);
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,92 @@
+/* stylelint-disable */
+.s-information {
+  margin: var(--a-padding-x12) 0;
+
+  &__block {
+    margin-top: rem(24);
+    padding: var(--a-padding-x6);
+    color: var(--color-second);
+    background: var(--color-main);
+    border-radius: var(--border-radius-x2);
+  }
+  &__description {
+    @include _1140 {
+      font-size: rem(18);
+    }
+  }
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(16);
+    margin-top: rem(16);
+    @include _768 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include _1140 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-white);
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-x2);
+    padding: var(--a-padding-x6);
+    min-height: rem(180);
+    transition: 0.3s;
+    @include _1140 {
+      min-height: rem(240);
+    }
+    &._color-1 {
+      background-color: var(--color-swiper);
+    }
+    &._color-2 {
+      background-color: var(--color-swiper-active);
+    }
+    &._color-3 {
+      background-color: var(--color-swiper-brilliant);
+    }
+    &:hover {
+      background-color: var(--color-yellow);
+    }
+    &-title {
+      font-size: rem(18);
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    &-description {
+      font-size: rem(14);
+      font-weight: 600;
+      margin-top: rem(6);
+      span {
+        position: relative;
+        &::before {
+          content: '';
+          width: 100%;
+          height: 1px;
+          position: absolute;
+          bottom: rem(-1);
+          left: 0;
+          background: var(--color-white);
+        }
+      }
+    }
+    &-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: rem(125);
+      background: var(--color-main);
+      color: var(--color-second);
+      min-height: rem(35);
+      border-radius: var(--border-radius-x2);
+      font-size: rem(10);
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-top: auto;
+    }
+  }
+}
+/* stylelint-enable */

@@ -1,0 +1,53 @@
+.a-control {
+  &__input {
+    display: none;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__trigger {
+    position: relative;
+    width: rem(16);
+    height: rem(16);
+    background-color: var(--color-grey);
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: rem(10);
+      height: rem(10);
+      background: var(--color-swiper-active);
+      transition: 0.2s;
+      transform: translate(-50%, -50%) scale(0) rotate(-180deg);
+    }
+
+    &--checked {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: var(--color-swiper-active);
+        transform: translate(-50%, -50%) scale(1) rotate(0);
+      }
+    }
+  }
+
+  &__text {
+    flex: 1;
+    margin-left: rem(8);
+    color: var(--color-control-text);
+    font-size: rem(12);
+    font-weight: 500;
+    cursor: pointer;
+
+    &--contrast {
+      color: var(--color-control-text-contrast);
+    }
+  }
+}

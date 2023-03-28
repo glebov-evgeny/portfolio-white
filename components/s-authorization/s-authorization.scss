@@ -1,0 +1,31 @@
+/* stylelint-disable */
+.s-authorization {
+  margin: var(--a-padding-x12) 0;
+  .section-form {
+    max-width: rem(440);
+    background: var(--color-swiper-brilliant);
+    border-radius: var(--border-radius-x2);
+    padding: var(--a-padding-x6);
+    margin: 0 auto;
+  }
+  .m-form {
+    .a-input {
+      margin-bottom: rem(8);
+    }
+    .a-button {
+      &--disabled {
+        .a-button__label {
+          color: var(--color-second);
+        }
+      }
+    }
+    &__change {
+      background: var(--color-white);
+      border: 0.0625rem solid var(--color-white);
+      .a-button__label {
+        color: var(--color-black);
+      }
+    }
+  }
+}
+/* stylelint-enable */

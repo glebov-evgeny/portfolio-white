@@ -1,0 +1,27 @@
+.s-presentation {
+  margin: var(--a-padding-x12) 0;
+
+  &__block {
+    @include _1140 {
+      display: grid;
+      padding: 0;
+      background: transparent;
+      border-radius: inherit;
+      grid-template-columns: repeat(2, 1fr);
+      gap: rem(16);
+    }
+
+    margin-top: rem(24);
+    padding: var(--a-padding-x6);
+    background: var(--color-main);
+    border-radius: var(--border-radius-x2);
+  }
+
+  &__description {
+    @include _1140 {
+      font-size: rem(18);
+    }
+
+    color: var(--color-second);
+  }
+}

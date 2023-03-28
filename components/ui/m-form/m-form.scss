@@ -1,0 +1,40 @@
+.m-form {
+  &__title {
+    width: calc(100% - rem(32));
+    margin-bottom: rem(16);
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: rem(24);
+    font-weight: 900;
+    line-height: 130%;
+    text-transform: uppercase;
+  }
+
+  &__inputs {
+    margin-bottom: rem(16);
+  }
+
+  &__error {
+    margin: rem(8) auto;
+    color: var(--color-swiper-active);
+    font-size: rem(14);
+    line-height: 120%;
+    text-align: center;
+  }
+
+  &__direction {
+    margin: rem(8) auto;
+    font-size: rem(10);
+    line-height: 120%;
+    text-align: center;
+  }
+
+  &__change {
+    background: transparent;
+    border: rem(1) solid var(--color-swiper);
+
+    span {
+      color: var(--color-swiper);
+      font-size: rem(12);
+    }
+  }
+}

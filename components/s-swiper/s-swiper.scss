@@ -1,0 +1,112 @@
+/* stylelint-disable */
+.s-swiper {
+  overflow: hidden;
+  box-sizing: border-box;
+  color: var(--color-second);
+  grid-area: swiper;
+
+  .swiper-slide {
+    overflow: hidden;
+    border-radius: var(--border-radius-x3);
+  }
+
+  &__title {
+    margin-bottom: rem(24);
+  }
+
+  &__block {
+    position: relative;
+    padding: var(--a-padding-x6);
+    background: var(--color-base-white);
+    border-radius: var(--border-radius-x2);
+  }
+
+  &__item {
+    position: relative;
+    &-img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+    }
+    &-link {
+      cursor: pointer;
+      position: absolute;
+      bottom: rem(20);
+      right: rem(20);
+      width: rem(40);
+      height: rem(40);
+      border-radius: 50%;
+      background-color: var(--color-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: rem(2) rem(2) var(--color-swiper-active), rem(-2) rem(-2) var(--color-swiper);
+      svg {
+        width: rem(14);
+        height: rem(14);
+        margin-right: rem(4);
+        line,
+        path {
+          stroke: var(--color-second);
+        }
+      }
+    }
+  }
+
+  &__navigation {
+    display: none;
+    @include _768 {
+      display: flex;
+      position: absolute;
+      right: rem(24);
+      top: rem(24);
+    }
+    &-item {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: rem(36);
+      height: rem(36);
+      border-radius: var(--border-radius-x2);
+      background: var(--color-swiper);
+      svg {
+        width: rem(16);
+        height: rem(16);
+        margin-right: rem(3);
+        line {
+          stroke: var(--color-main);
+        }
+      }
+      &.s-swiper__navigation-prev {
+        background: var(--color-swiper-active);
+        transform: rotate(180deg);
+        margin-right: rem(6);
+      }
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: rem(20) auto 0;
+
+    .swiper-pagination-bullet {
+      width: rem(10);
+      height: rem(10);
+      background: var(--color-swiper);
+      opacity: 1;
+      transition: 0.4s;
+
+      &-active {
+        width: rem(45);
+        height: rem(10);
+        background: var(--color-swiper-active);
+        border-radius: rem(12);
+      }
+    }
+  }
+}
+/* stylelint-enable */

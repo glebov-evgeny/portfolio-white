@@ -1,0 +1,41 @@
+.s-intro {
+  color: var(--color-white);
+  grid-area: intro;
+
+  &__block {
+    padding: var(--a-padding-x6);
+    background: var(--color-brilliant);
+    border-radius: var(--border-radius-x2);
+  }
+
+  &__container {
+    @include _768 {
+      height: 100%;
+      background: var(--color-brilliant);
+      border-radius: var(--border-radius-x2);
+    }
+  }
+
+  &__subtitle {
+    @include _1140 {
+      font-size: rem(18);
+    }
+
+    margin-bottom: rem(8);
+    font-size: rem(16);
+  }
+
+  &__title {
+    margin-bottom: rem(8);
+    color: var(--color-white);
+  }
+
+  &__text {
+    @include _1140 {
+      font-size: rem(18);
+    }
+
+    font-size: rem(16);
+    text-align: justify;
+  }
+}
