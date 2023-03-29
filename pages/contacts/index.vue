@@ -1,6 +1,5 @@
 <template>
   <main class="s-main">
-    <s-intro />
-    <p>...</p>
+    <p>contacts</p>
   </main>
 </template>
