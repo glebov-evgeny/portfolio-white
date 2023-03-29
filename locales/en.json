@@ -21,5 +21,148 @@
   "intro": {
     "title": "<span>Frontent</span> <br/>developer",
     "stack": "Vue / Nuxt"
+  },
+  "experience": {
+    "title": "Technologies I use",
+    "item": [
+      {
+        "title": "Development",
+        "points": [
+          "Nuxt",
+          "Vue",
+          "Vuex / Pinia",
+          "Chart.js",
+          "GSAP",
+          "i18n",
+          "Material UI",
+          "Tailwind",
+          "Bootstrap",
+          "Firebase"
+        ]
+      },
+      {
+        "title": "Management and Tools",
+        "points": [
+          "Jira",
+          "Notion",
+          "Webpack",
+          "Gulp",
+          "Git"
+        ]
+      }
+    ]
+  },
+  "work": {
+    "title": "Work experience",
+    "stack": "Stack:",
+    "responsibilities": "Progress:",
+    "example": "Site examples:",
+    "info": [
+      {
+        "name": "Frontend-developer",
+        "date": "September 2022 г. – present time",
+        "company": {
+          "name": "SYNERGY Corporation",
+          "link": "https://synergy.ru/"
+        },
+        "duties": [
+          "Creating the main page of the website, personal account and administrative panel",
+          "Writing components related to the user passing tests and issuing suitable professions, depending on the result",
+          "Introduction of mechanics that allows the administrator to change the structure and content of the main page and personal account",
+          "Optimization of page speed, refactoring of the code base, mechanics of authorization and user verification",
+          "Development of a landing page for events with dynamically generated content from the administrative panel"
+        ],
+        "links": [
+          {
+            "item": "https://synergystart.ru/",
+            "image": "start"
+          }
+        ],
+        "stack": ["Nuxt 2/3", "Vue 2/3", "Vuex/Pina", "Options API/Composition API"]
+      },
+      {
+        "name": "Frontend-developer",
+        "date": "May 2022 г. - September 2022 г.",
+        "company": {
+          "name": "Cheil Russia",
+          "link": "http://www.cheil.com/ru"
+        },
+
+        "duties": [
+          "Development of the logic of the product pages of the site",
+          "Writing product selection configurators",
+          "Queries, display, interaction with data",
+          "Life cycle maintenance and optimization of developed solutions"
+        ],
+        "links": [
+          {
+            "item": "https://www.samsung.com/ru/offer/samsung-care-plus/",
+            "image": "careplus"
+          }
+        ],
+        "stack": ["Vue", "React"]
+      },
+      {
+        "name": "HTML-coder",
+        "date": "January 2019 г. - May 2022 г.",
+        "company": {
+          "name": "SYNERGY Corporation",
+          "link": "https://synergy.ru/"
+        },
+        "duties": [
+          "Development of landing pages based on figma",
+          "Integration with Bitrix, modX",
+          "Support for existing projects",
+          "Setting up optimization, analytics, mechanics of interaction with the server"
+        ],
+        "links": [
+          {
+            "item": "https://synergy.ru/lp/design/",
+            "image": "design"
+          },
+          {
+            "item": "https://synergyproduction.ru/",
+            "image": "production"
+          },
+          {
+            "item": "https://akademia-triz.ru/lp/webinar/",
+            "image": "webinar"
+          },
+          {
+            "item": "https://synergydigital.com/lp/marketplaces/",
+            "image": "marketplaces"
+          },
+          {
+            "item": "https://synergy.ru/lp/openday/management/",
+            "image": "management"
+          },
+          {
+            "item": "https://programiss.ru/",
+            "image": "programiss"
+          },
+          {
+            "item": "https://synergyglobal.ru/forums/brain2023/",
+            "image": "brain"
+          }
+        ],
+        "stack": ["Gulp", "Nunjucks", "PHP", "JS"]
+      },
+      {
+        "name": "HTML-coder",
+        "date": "June 2018 г. - October 2018 г.",
+        "company": {
+          "name": "'Green Line'",
+          "link": "https://www.inspiro.ru/"
+        },
+        "duties": [
+          "Development of landing pages",
+          "Implementation and configuration of analytics systems",
+          "Micropage layout",
+          "Site speed optimization",
+          "Maiking of e-mail"
+        ],
+        "stack": ["HTML/CSS", "JavaScript/jQuery"]
+      }
+    ]
   }
 }

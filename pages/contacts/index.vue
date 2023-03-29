@@ -1,6 +1,6 @@
 <template>
-  <div>
+  <main class="s-main">
     <s-intro />
     <p>...</p>
-  </div>
+  </main>
 </template>

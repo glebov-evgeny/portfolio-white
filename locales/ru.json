@@ -21,5 +21,148 @@
   "intro": {
     "title": "<span>Фронтенд</span> <br/>разработчик",
     "stack": "Vue / Nuxt"
+  },
+  "experience": {
+    "title": "Стек технологий",
+    "item": [
+      {
+        "title": "Разработка",
+        "points": [
+          "Nuxt",
+          "Vue",
+          "Vuex / Pinia",
+          "Chart.js",
+          "GSAP",
+          "i18n",
+          "Material UI",
+          "Tailwind",
+          "Bootstrap",
+          "Firebase"
+        ]
+      },
+      {
+        "title": "Коммуникация",
+        "points": [
+          "Jira",
+          "Notion",
+          "Webpack",
+          "Gulp",
+          "Git"
+        ]
+      }
+    ]
+  },
+  "work": {
+    "title": "Опыт работы",
+    "responsibilities": "Достижения:",
+    "stack": "Стек:",
+    "example": "Примеры работ:",
+    "info": [
+      {
+        "name": "Frontend-разработчик",
+        "date": "сент. 2022 г. – настоящее время",
+        "company": {
+          "name": "Корпорация СИНЕРГИЯ",
+          "link": "https://synergy.ru/"
+        },
+        "duties": [
+          "Создание главной страницы сайта, личного кабинета и административной панели",
+          "Написание компонентов, связанных с прохождением пользователем тестов, и выдаче подходящих профессий, в зависимости от результата",
+          "Внедрение механики, позволяющей администратору менять структуру и наполнение главной страницы и личного кабинета",
+          "Оптимизация скорости загрузки, рефакторинг кодовой базы, механики авторизации и верификации пользователей",
+          "Разработка лендинга для проведения мероприятий с динамически генерируемым контентом из административной панели"
+        ],
+        "links": [
+          {
+            "item": "https://synergystart.ru/",
+            "image": "start"
+          }
+        ],
+        "stack": ["Nuxt 2/3", "Vue 2/3", "Vuex/Pina", "Options API/Composition API"]
+      },
+      {
+        "name": "Frontend-разработчик",
+        "date": "май 2022 г. - сент. 2022 г.",
+        "company": {
+          "name": "Чейл Рус",
+          "link": "http://www.cheil.com/ru"
+        },
+
+        "duties": [
+          "Разработка логики продуктовых страниц сайта",
+          "Написание конфигураторов подбора товаров",
+          "Запросы, отображение, взаимодействие с данными",
+          "Поддержание жизненного цикла и оптимизация разработанных решений"
+        ],
+        "links": [
+          {
+            "item": "https://www.samsung.com/ru/offer/samsung-care-plus/",
+            "image": "careplus"
+          }
+        ],
+        "stack": ["Vue", "React"]
+      },
+      {
+        "name": "HTML-верстальщик",
+        "date": "янв. 2019 г. - май 2022 г.",
+        "company": {
+          "name": "Корпорация СИНЕРГИЯ",
+          "link": "https://synergy.ru/"
+        },
+        "duties": [
+          "Разработка лэндингов по макетам в figma",
+          "Интеграция с битрикс, modX",
+          "Поддержка существующих проектов",
+          "Настройка оптимизации, аналитики, механик взаимодействия с сервером"
+        ],
+        "links": [
+          {
+            "item": "https://synergy.ru/lp/design/",
+            "image": "design"
+          },
+          {
+            "item": "https://synergyproduction.ru/",
+            "image": "production"
+          },
+          {
+            "item": "https://akademia-triz.ru/lp/webinar/",
+            "image": "webinar"
+          },
+          {
+            "item": "https://synergydigital.com/lp/marketplaces/",
+            "image": "marketplaces"
+          },
+          {
+            "item": "https://synergy.ru/lp/openday/management/",
+            "image": "management"
+          },
+          {
+            "item": "https://programiss.ru/",
+            "image": "programiss"
+          },
+          {
+            "item": "https://synergyglobal.ru/forums/brain2023/",
+            "image": "brain"
+          }
+        ],
+        "stack": ["Gulp", "Nunjucks", "PHP", "JS"]
+      },
+      {
+        "name": "HTML-верстальщик",
+        "date": "июнь 2018 г. - окт. 2018 г.",
+        "company": {
+          "name": "КЦ 'Зеленая линия'",
+          "link": "https://www.inspiro.ru/"
+        },
+        "duties": [
+          "Разработка лэндингов",
+          "Внедрение и настройка систем аналитики",
+          "Микроразметка страниц",
+          "Оптимизация скорости работы сайта",
+          "Подготовка e-mail рассылок"
+        ],
+        "stack": ["HTML/CSS", "JavaScript/jQuery"]
+      }
+    ]
   }
 }

@@ -11,8 +11,8 @@
   }
 }
 
-@mixin _1440 {
-  @media screen and (min-width: 1440px) {
+@mixin _1600 {
+  @media screen and (min-width: 1600px) {
     @content;
   }
 }

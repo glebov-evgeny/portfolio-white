@@ -1,3 +1,5 @@
 <template>
-  <h3>Projects</h3>
+  <main class="s-main">
+    <s-project />
+  </main>
 </template>

@@ -1,3 +1,6 @@
 <template>
-  <h3>experience</h3>
+  <main class="s-main">
+    <s-experience />
+    <s-work />
+  </main>
 </template>
