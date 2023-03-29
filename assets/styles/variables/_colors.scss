@@ -2,11 +2,17 @@
 :root {
   --color-main: #fff;
   --color-second: #272727;
+  --color-blue: #2c6ff3;
+  --color-yellow: #ffbd00;
+  --color-gradient: #e6e6e6;
   --color-test: #eee;
   --color-test1: #6c6c6c;
   .dark-themes {
     --color-main: #272727;
     --color-second: #fff;
+    --color-blue: #85abf5;
+    --color-yellow: #ffbd00;
+    --color-gradient: #424242;
     --color-test: #747474;
     --color-test1: #424242;
   }

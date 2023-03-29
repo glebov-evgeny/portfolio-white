@@ -5,19 +5,40 @@
   align-items: center;
   width: 100%;
   max-width: rem(40);
-  padding: var(--a-padding-x6) 0;
+  padding: var(--a-padding-x3) 0;
   background: var(--color-main);
-
+  @include _576 {
+    max-width: rem(60);
+  }
+  @include _768 {
+    max-width: rem(160);
+    padding: var(--a-padding-x6);
+    align-items: flex-start;
+  }
   &__logo {
-    font-size: rem(22);
+    font-size: rem(18);
     font-weight: 600;
     writing-mode: vertical-rl;
     transform: rotate(-180deg);
+    color: var(--color-blue);
+    @include _768 {
+      transform: none;
+      writing-mode: initial;
+      font-size: rem(24);
+      line-height: 120%;
+      font-weight: 700;
+      span{
+        display: block;
+      }
+    }
   }
 
   &__logic {
     display: flex;
     flex-direction: column;
+    @include _768 {
+      flex-direction: row;
+    }
   }
 
   &__icon {

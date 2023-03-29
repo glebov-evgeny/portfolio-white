@@ -8,5 +8,12 @@
     font-weight: 500;
     transform: rotate(-180deg);
     writing-mode: vertical-rl;
+    color: var(--color-second);
+    @include _768 {
+      transform: none;
+      writing-mode: initial;
+      font-size: rem(18);
+      font-weight: 400;
+    }
   }
 }

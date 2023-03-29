@@ -1,5 +1,6 @@
 <template>
   <div :class="['s-layout', { 'dark-themes': isLightThemes }]">
+    <s-loader />
     <s-header @handler-change-themes="changeColorThemes" />
     <main class="s-main">
       <NuxtPage />

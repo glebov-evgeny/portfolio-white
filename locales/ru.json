@@ -1,5 +1,5 @@
 {
-  "name": "Глебов Евгений",
+  "name": "<span>Глебов</span> Евгений",
   "resume": "Резюме",
   "language": "EN",
   "header": {
@@ -19,6 +19,7 @@
     ]
   },
   "intro": {
-    "title": "Фронтенд разработчик"
+    "title": "<span>Фронтенд</span> <br/>разработчик",
+    "stack": "Vue / Nuxt"
   }
 }
