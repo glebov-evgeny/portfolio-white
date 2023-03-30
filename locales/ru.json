@@ -23,7 +23,10 @@
     "stack": "Vue / Nuxt"
   },
   "contacts": {
-    "title": "Take the first step on the path <span class='color-yellow'>Фронтенд</span> <br/>разработчик"
+    "title": "Сделайте <span class='color-yellow'>первый шаг </span> на пути к развитию <span class='color-blue'>вашего бизнеса</span>",
+    "telegram": "Телеграм",
+    "social": "Полезное",
+    "email": "Почта"
   },
   "experience": {
     "title": "Стек технологий",

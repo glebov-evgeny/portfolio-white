@@ -23,7 +23,10 @@
     "stack": "Vue / Nuxt"
   },
   "contacts": {
-    "title": "Take <span class='color-yellow'>the first step</span> on the path to development <span class='color-blue'>of your business</span>"
+    "title": "Take <span class='color-yellow'>the first step</span> on the path to development <span class='color-blue'>of your business</span>",
+    "telegram": "Telegram",
+    "social": "Social links",
+    "email": "Email"
   },
   "experience": {
     "title": "Technologies I use",

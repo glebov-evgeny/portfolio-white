@@ -1,3 +1,107 @@
 .s-contacts {
   color: var(--color-second);
+
+  &-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16vmax;
+    transform-origin: 50% 50%;
+    animation: move 12s ease-in-out reverse infinite;
+    fill: #ffbd0052;
+    @keyframes move {
+      0% {
+        transform: scale(1) translate(10vw, 5vh);
+      }
+
+      38% {
+        transform: scaleX(0.8) translate(80vw, 30vh) rotate(160deg);
+      }
+
+      40% {
+        transform: scaleX(0.8) translate(80vw, 30vh) rotate(160deg);
+      }
+
+      78% {
+        transform: scale(1.3) translate(15vw, 50vh) rotate(-20deg);
+      }
+
+      80% {
+        transform: scale(1.3) translate(15vw, 50vh) rotate(-20deg);
+      }
+
+      100% {
+        transform: scale(1) translate(10vw, 5vh);
+      }
+    }
+  }
+
+  &__title {
+    @include _576 {
+      max-width: rem(456);
+    }
+    @include _768 {
+      max-width: rem(598);
+    }
+    @include _1600 {
+      max-width: rem(740);
+    }
+    @include _1920 {
+      max-width: rem(912);
+    }
+  }
+
+  &__container {
+    @include _768 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    position: relative;
+    z-index: 1;
+  }
+
+  &__block {
+    @include _768 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(32);
+    margin-top: rem(80);
+  }
+
+  &__item {
+    &-title {
+      font-size: rem(16);
+      font-weight: 500;
+    }
+
+    &-link {
+      position: relative;
+      color: var(--color-blue);
+      font-size: rem(16);
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: rem(-2);
+        width: 100%;
+        height: 1px;
+        background: var(--color-blue);
+        background-repeat: repeat-x;
+        background-position: 0 100%;
+        background-size: auto 3px;
+      }
+
+      &:hover {
+        &::before {
+          height: rem(4);
+          background: url('@/images/icons/line.svg');
+        }
+      }
+    }
+  }
 }
