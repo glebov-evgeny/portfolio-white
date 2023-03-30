@@ -1,42 +1,48 @@
 .s-intro {
   position: relative;
-  background:  linear-gradient(180deg, var(--color-main) 55%, var(--color-gradient) 55%);
+  background: linear-gradient(180deg, var(--color-main) 55%, var(--color-gradient) 55%);
   min-height: 100vh;
-  &__image{
+
+  &__image {
     width: 100%;
     height: 60vh;
     background: #e6e6e6;
     position: absolute;
     bottom: 0;
     z-index: 0;
-    opacity: .3;
+    opacity: 0.3;
     display: none;
   }
-  &__content{
+
+  &__content {
     position: absolute;
     top: 20vh;
     z-index: 2;
   }
-  &__title{
+
+  &__title {
     font-size: rem(36);
     line-height: 120%;
     font-weight: 700;
     color: var(--color-second);
-    span{
+
+    span {
       color: var(--color-blue);
     }
     @include _576 {
       font-size: rem(46);
     }
   }
-  &__description{
+
+  &__description {
     position: relative;
     font-size: rem(26);
     line-height: 120%;
     font-weight: 800;
     color: var(--color-yellow);
     margin-top: rem(40);
-    &::before{
+
+    &::before {
       content: '';
       width: rem(48);
       height: rem(3);

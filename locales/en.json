@@ -19,8 +19,11 @@
     ]
   },
   "intro": {
-    "title": "<span>Frontent</span> <br/>developer",
+    "title": "<span class='color-blue'>Frontent</span> <br/>developer",
     "stack": "Vue / Nuxt"
+  },
+  "contacts": {
+    "title": "Take <span class='color-yellow'>the first step</span> on the path to development <span class='color-blue'>of your business</span>"
   },
   "experience": {
     "title": "Technologies I use",
@@ -42,13 +45,7 @@
       },
       {
         "title": "Management and Tools",
-        "points": [
-          "Jira",
-          "Notion",
-          "Webpack",
-          "Gulp",
-          "Git"
-        ]
+        "points": ["Jira", "Notion", "Webpack", "Gulp", "Git"]
       }
     ]
   },

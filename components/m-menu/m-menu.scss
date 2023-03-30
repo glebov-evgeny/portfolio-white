@@ -3,17 +3,18 @@
   flex-direction: column;
 
   &__link {
+    @include _768 {
+      font-size: rem(18);
+      font-weight: 400;
+      transform: none;
+      writing-mode: initial;
+    }
+
     margin: rem(10) 0;
+    color: var(--color-second);
     font-size: rem(16);
     font-weight: 500;
     transform: rotate(-180deg);
     writing-mode: vertical-rl;
-    color: var(--color-second);
-    @include _768 {
-      transform: none;
-      writing-mode: initial;
-      font-size: rem(18);
-      font-weight: 400;
-    }
   }
 }

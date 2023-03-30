@@ -19,8 +19,11 @@
     ]
   },
   "intro": {
-    "title": "<span>Фронтенд</span> <br/>разработчик",
+    "title": "<span class='color-blue'>Фронтенд</span> <br/>разработчик",
     "stack": "Vue / Nuxt"
+  },
+  "contacts": {
+    "title": "Take the first step on the path <span class='color-yellow'>Фронтенд</span> <br/>разработчик"
   },
   "experience": {
     "title": "Стек технологий",
@@ -42,13 +45,7 @@
       },
       {
         "title": "Коммуникация",
-        "points": [
-          "Jira",
-          "Notion",
-          "Webpack",
-          "Gulp",
-          "Git"
-        ]
+        "points": ["Jira", "Notion", "Webpack", "Gulp", "Git"]
       }
     ]
   },

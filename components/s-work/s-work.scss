@@ -1,13 +1,15 @@
 .s-work {
   color: var(--color-second);
   margin-top: rem(48);
-  &__box{
+
+  &__box {
     display: grid;
     grid-template-columns: 1fr;
     gap: rem(32);
   }
-  &__item{
-    &-title{
+
+  &__item {
+    &-title {
       font-size: rem(18);
       font-weight: 600;
       margin-bottom: rem(8);
@@ -15,7 +17,8 @@
         font-size: rem(20);
       }
     }
-    &-company{
+
+    &-company {
       color: var(--color-blue);
       font-size: rem(14);
       font-weight: 500;
@@ -23,14 +26,16 @@
         font-size: rem(16);
       }
     }
-    &-date{
+
+    &-date {
       font-size: rem(14);
       font-weight: 400;
       @include _768 {
         font-size: rem(16);
       }
     }
-    &-top{
+
+    &-top {
       margin-bottom: rem(8);
       @include _768 {
         display: flex;
@@ -38,10 +43,12 @@
         align-items: flex-start;
       }
     }
-    &-block{
+
+    &-block {
       margin-top: rem(8);
     }
-    &-subtitle{
+
+    &-subtitle {
       font-size: rem(16);
       font-weight: 500;
       margin-bottom: rem(8);
@@ -49,13 +56,15 @@
         font-size: rem(18);
       }
     }
-    &-dutie{
+
+    &-dutie {
       position: relative;
       font-size: rem(14);
       font-weight: 400;
-      padding-left:var(--a-padding-x4);
+      padding-left: var(--a-padding-x4);
       margin-bottom: rem(8);
-      &:before{
+
+      &::before {
         content: '';
         width: rem(6);
         height: rem(6);
@@ -67,8 +76,9 @@
       }
       @include _768 {
         font-size: rem(16);
-        padding-left:var(--a-padding-x6);
-        &:before{
+        padding-left: var(--a-padding-x6);
+
+        &::before {
           width: rem(6);
           height: rem(6);
           top: rem(7);
@@ -76,21 +86,23 @@
         }
       }
     }
-    &-stack{
+
+    &-stack {
       display: inline-block;
       font-size: rem(14);
       line-height: 100%;
       font-weight: 500;
       padding: var(--a-padding-x2) var(--a-padding-x3);
       border-radius: var(--border-radius-x1);
-      background: #FBFBFB;
+      background: #fbfbfb;
       color: var(--color-black);
       margin: 0 rem(6) rem(6) 0;
       @include _768 {
         font-size: rem(16);
       }
     }
-    &-example{
+
+    &-example {
       display: inline-block;
       width: rem(60);
       height: rem(60);
@@ -101,4 +113,3 @@
     }
   }
 }
-

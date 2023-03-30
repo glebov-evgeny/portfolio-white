@@ -19,6 +19,7 @@
     padding: var(--a-padding-x6);
     align-items: flex-start;
   }
+
   &__logo {
     font-size: rem(18);
     font-weight: 600;
@@ -31,7 +32,8 @@
       font-size: rem(24);
       line-height: 120%;
       font-weight: 700;
-      span{
+
+      span {
         display: block;
       }
     }
