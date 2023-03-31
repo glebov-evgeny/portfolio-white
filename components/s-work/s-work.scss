@@ -1,6 +1,6 @@
 .s-work {
-  color: var(--color-second);
   margin-top: rem(48);
+  color: var(--color-second);
 
   &__box {
     display: grid;
@@ -10,38 +10,42 @@
 
   &__item {
     &-title {
-      font-size: rem(18);
-      font-weight: 600;
-      margin-bottom: rem(8);
       @include _768 {
         font-size: rem(20);
       }
+
+      margin-bottom: rem(8);
+      font-size: rem(18);
+      font-weight: 600;
     }
 
     &-company {
+      @include _768 {
+        font-size: rem(16);
+      }
+
       color: var(--color-blue);
       font-size: rem(14);
       font-weight: 500;
-      @include _768 {
-        font-size: rem(16);
-      }
     }
 
     &-date {
-      font-size: rem(14);
-      font-weight: 400;
       @include _768 {
         font-size: rem(16);
       }
+
+      font-size: rem(14);
+      font-weight: 400;
     }
 
     &-top {
-      margin-bottom: rem(8);
       @include _768 {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
       }
+
+      margin-bottom: rem(8);
     }
 
     &-block {
@@ -49,67 +53,70 @@
     }
 
     &-subtitle {
-      font-size: rem(16);
-      font-weight: 500;
-      margin-bottom: rem(8);
       @include _768 {
         font-size: rem(18);
       }
+
+      margin-bottom: rem(8);
+      font-size: rem(16);
+      font-weight: 500;
     }
 
     &-dutie {
+      @include _768 {
+        padding-left: var(--a-padding-x6);
+        font-size: rem(16);
+
+        &::before {
+          top: rem(7);
+          left: rem(2);
+          width: rem(6);
+          height: rem(6);
+        }
+      }
+
       position: relative;
+      margin-bottom: rem(8);
+      padding-left: var(--a-padding-x4);
       font-size: rem(14);
       font-weight: 400;
-      padding-left: var(--a-padding-x4);
-      margin-bottom: rem(8);
 
       &::before {
         content: '';
-        width: rem(6);
-        height: rem(6);
-        background: var(--color-second);
         position: absolute;
         top: rem(6);
         left: rem(0);
+        width: rem(6);
+        height: rem(6);
+        background: var(--color-second);
         transform: rotate(45deg);
-      }
-      @include _768 {
-        font-size: rem(16);
-        padding-left: var(--a-padding-x6);
-
-        &::before {
-          width: rem(6);
-          height: rem(6);
-          top: rem(7);
-          left: rem(2);
-        }
       }
     }
 
     &-stack {
-      display: inline-block;
-      font-size: rem(14);
-      line-height: 100%;
-      font-weight: 500;
-      padding: var(--a-padding-x2) var(--a-padding-x3);
-      border-radius: var(--border-radius-x1);
-      background: #fbfbfb;
-      color: var(--color-black);
-      margin: 0 rem(6) rem(6) 0;
       @include _768 {
         font-size: rem(16);
       }
+
+      display: inline-block;
+      margin: 0 rem(6) rem(6) 0;
+      padding: var(--a-padding-x2) var(--a-padding-x3);
+      color: var(--color-black);
+      background: #fbfbfb;
+      border-radius: var(--border-radius-x1);
+      font-size: rem(14);
+      font-weight: 500;
+      line-height: 100%;
     }
 
     &-example {
       display: inline-block;
       width: rem(60);
       height: rem(60);
+      margin: 0 rem(6) rem(6) 0;
       background-position: center;
       background-size: cover;
       border-radius: var(--border-radius-x1);
-      margin: 0 rem(6) rem(6) 0;
     }
   }
 }

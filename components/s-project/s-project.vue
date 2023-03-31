@@ -5,7 +5,7 @@
         <h2 class="s-project__title s-title">{{ $t('work.title') }}</h2>
       </div>
       <div class="s-project__main container__main">
-        <p>...</p>
+        <p>content</p>
       </div>
     </div>
   </section>
