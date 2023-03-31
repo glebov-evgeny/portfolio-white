@@ -99,7 +99,7 @@
       &:hover {
         &::before {
           height: rem(4);
-          background: url('@/images/icons/line.svg');
+          background: url('/public/images/icons/line.svg');
         }
       }
     }
