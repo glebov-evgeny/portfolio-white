@@ -1,6 +1,7 @@
 .s-header {
   @include _576 {
     max-width: rem(60);
+    background: var(--color-second);
   }
   @include _768 {
     align-items: flex-start;
@@ -19,9 +20,12 @@
   width: 100%;
   max-width: rem(40);
   padding: var(--a-padding-x3) 0;
-  background: var(--color-pink);
+  background: var(--color-main);
 
   &__logo {
+    @include _576 {
+      color: var(--color-main);
+    }
     @include _768 {
       font-size: rem(24);
       transform: none;
@@ -32,7 +36,7 @@
       }
     }
 
-    color: var(--color-main);
+    color: var(--color-second);
     font-size: rem(18);
     font-weight: 800;
     transform: rotate(-180deg);
@@ -63,18 +67,23 @@
     align-items: center;
     width: rem(30);
     height: rem(30);
-    color: var(--color-main);
+    color: var(--color-second);
     background: transparent;
     border: none;
     outline: none;
     font-size: rem(16);
     font-weight: 600;
     cursor: pointer;
-
+    @include _576 {
+      color: var(--color-main);
+    }
     &-image {
       path,
       rect {
-        fill: var(--color-main);
+        fill: var(--color-second);
+        @include _576 {
+          fill: var(--color-main);
+        }
       }
     }
   }

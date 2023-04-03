@@ -3,6 +3,9 @@
   flex-direction: column;
 
   &__link {
+    @include _576 {
+      color: var(--color-main);
+    }
     @include _768 {
       font-size: rem(18);
       transform: none;
@@ -10,7 +13,7 @@
     }
 
     margin: rem(10) 0;
-    color: var(--color-main);
+    color: var(--color-second);
     font-size: rem(16);
     font-weight: 600;
     transform: rotate(-180deg);
