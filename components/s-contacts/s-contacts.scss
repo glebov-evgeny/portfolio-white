@@ -13,15 +13,22 @@
     padding-left: rem(100);
   }
   &-decoration {
+    width: rem(160);
+    height: rem(160);
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjExNiIgdmlld0JveD0iMCAwIDE1MCAxMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xNDkuOTUgNzQuNUMxNDkuOTUgMTE1LjY0NSAxMTYuNTk1IDExNiA3NS40NTAyIDExNkMzNC4zMDUgMTE2IDAuOTUwMTk1IDExNS42NDUgMC45NTAxOTUgNzQuNUMwLjk1MDE5NSAzMy4zNTQ4IDM0LjMwNSAwIDc1LjQ1MDIgMEMxMTYuNTk1IDAgMTQ5Ljk1IDMzLjM1NDggMTQ5Ljk1IDc0LjVaIiBmaWxsPSIjRkZFRTk1Ii8+Cjwvc3ZnPgo=);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
     top: 0;
     left: 0;
-    width: 20vmax;
     transform-origin: 50% 50%;
-    animation: move 12s ease-in-out reverse infinite;
-    fill: #ffbd0052;
-    svg path{
-      fill: #ffbd0052;
+    opacity: .4;
+    animation: move 14s ease-in-out reverse infinite;
+
+    @include _1140{
+      width: rem(240);
+      height: rem(240);
     }
     @keyframes move {
       0% {
@@ -57,6 +64,12 @@
     @include _576 {
       font-size: rem(36);
     }
+    @include _768 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+    }
     @include _992 {
       br {
         display: block;
@@ -80,11 +93,14 @@
   }
 
   &__content{
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: rem(16) 0;
+    padding: var(--a-padding-x5) 0;
+    @include _768 {
+      padding: var(--a-padding-x6) 0;
+    }
   }
   &__block {
     @include _768 {

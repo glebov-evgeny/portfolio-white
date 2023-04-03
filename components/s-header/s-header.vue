@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/no-v-html -->
 <template>
   <header class="s-header">
-    <nuxt-link to="/" class="s-header__logo"><p v-html="$t('name')"></p></nuxt-link>
+    <nuxt-link to="/" class="s-header__logo"><span v-html="$t('name')"></span></nuxt-link>
     <m-menu />
     <div class="s-header__logic">
       <button class="s-header__icon" type="button" @click="changeThemes">

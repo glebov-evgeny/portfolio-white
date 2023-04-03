@@ -39,3 +39,24 @@ onMounted(() => {
   }
 });
 </script>
+
+<style>
+.page-enter-active {
+  opacity: 0;
+  transform: translateY(10%);
+  transition: all 0.3s linear;
+}
+.page-leave-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s linear;
+}
+.page-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-10%);
+}
+</style>

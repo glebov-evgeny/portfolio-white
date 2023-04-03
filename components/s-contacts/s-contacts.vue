@@ -1,13 +1,7 @@
 <!-- eslint-disable vue/no-v-html -->
 <template>
   <section class="s-contacts">
-    <div class="s-contacts-decoration">
-      <svg width="200" height="160">
-        <path
-          d="M149.95 74.5C149.95 115.645 116.595 116 75.4502 116C34.305 116 0.950195 115.645 0.950195 74.5C0.950195 33.3548 34.305 0 75.4502 0C116.595 0 149.95 33.3548 149.95 74.5Z"
-        />
-      </svg>
-    </div>
+    <div class="s-contacts-decoration"></div>
     <div class="container s-contacts__container">
       <div class="s-contacts__content">
         <h2 class="s-contacts__title" v-html="$t('contacts.title')"></h2>

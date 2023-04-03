@@ -36,19 +36,30 @@
       }
     }
 
-    color: var(--color-second);
-    font-size: rem(18);
-    font-weight: 800;
-    transform: rotate(-180deg);
-    writing-mode: vertical-rl;
-
     @media screen and (max-height: 445px) {
       flex-shrink: 0;
       border-radius: 50%;
       font-size: 0;
       width: rem(26);
       height: rem(26);
-      background: var(--color-main);
+      background: var(--color-second);
+      @include _576 {
+        background: var(--color-main);
+      }
+    }
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: var(--color-second);
+    font-size: rem(18);
+    font-weight: 800;
+    transform: rotate(-180deg);
+    writing-mode: vertical-rl;
+    position: relative;
+    span{
+      position: relative;
+      z-index: 2;
     }
   }
 
@@ -78,6 +89,10 @@
       color: var(--color-main);
     }
     &-image {
+      transition: .3s;
+      &:hover{
+        transform: rotate(45deg);
+      }
       path,
       rect {
         fill: var(--color-second);
