@@ -1,8 +1,9 @@
+<!-- eslint-disable vue/no-v-html -->
 <template>
   <section class="s-work">
     <div class="container s-work__container container__box">
       <div class="s-work__aside container__aside">
-        <h2 class="s-work__title s-title">{{ $t('work.title') }}</h2>
+        <h2 class="s-work__title s-title" v-html="$t('work.title')"></h2>
       </div>
       <div class="s-work__main container__main">
         <div class="s-work__box">

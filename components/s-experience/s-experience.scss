@@ -2,6 +2,16 @@
 .s-experience {
   background: var(--color-main);
   color: var(--color-second);
+  margin-top: rem(116);
+  @include _576 {
+    padding-left: rem(40);
+  }
+  @include _768 {
+    padding-left: rem(60);
+  }
+  @include _1600 {
+    padding-left: rem(100);
+  }
   &__box {
     display: grid;
     grid-template-columns: 1fr;

@@ -1,16 +1,16 @@
 /* stylelint-disable */
 .s-title {
-  font-size: rem(26);
+  font-size: rem(28);
   line-height: 135%;
   font-weight: 800;
   margin-bottom: rem(24);
   @media all and (min-width: 768px) {
-    font-size: rem(34);
+    font-size: rem(36);
+  }
+  @media screen and (min-width: 1140px) {
+    font-size: rem(46);
   }
   @media screen and (min-width: 1600px) {
-    font-size: rem(42);
-  }
-  @media screen and (min-width: 1920px) {
     font-size: rem(52);
   }
 }

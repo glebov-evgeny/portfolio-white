@@ -1,8 +1,9 @@
+<!-- eslint-disable vue/no-v-html -->
 <template>
   <section class="s-experience">
     <div class="container s-experience__container container__box">
       <div class="s-experience__aside container__aside">
-        <h2 class="s-experience__title s-title">{{ $t('experience.title') }}</h2>
+        <h2 class="s-experience__title s-title" v-html="$t('experience.title')"></h2>
       </div>
       <div class="s-experience__main container__main">
         <div class="s-experience__box">

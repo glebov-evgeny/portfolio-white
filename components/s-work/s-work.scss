@@ -1,7 +1,17 @@
 .s-work {
   margin-top: rem(48);
   color: var(--color-second);
-
+  padding-bottom: var(--a-padding-x3);
+  @include _576 {
+    padding-left: rem(40);
+  }
+  @include _768 {
+    padding-left: rem(60);
+    padding-bottom: var(--a-padding-x6);
+  }
+  @include _1600 {
+    padding-left: rem(100);
+  }
   &__box {
     display: grid;
     grid-template-columns: 1fr;
