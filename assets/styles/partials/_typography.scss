@@ -14,6 +14,25 @@
     font-size: rem(52);
   }
 }
+
+.s-main-title {
+  font-size: rem(46);
+  font-weight: 800;
+  line-height: 120%;
+  @media all and (min-width: 576px) {
+    font-size: rem(64);
+  }
+  @media all and (min-width: 768px) {
+    font-size: rem(72);
+  }
+  @media all and (min-width: 992px) {
+    font-size: rem(84);
+  }
+  @media screen and (min-width: 1600px) {
+    font-size: rem(92);
+  }
+}
+
 .container__box {
   @media all and (min-width: 1140px) {
     display: flex;

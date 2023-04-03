@@ -1,8 +1,16 @@
 .s-intro {
   position: relative;
   min-height: 100vh;
-  background: linear-gradient(180deg, var(--color-main) 55%, var(--color-gradient) 55%);
-
+  background: linear-gradient(180deg, var(--color-main) 70%, var(--color-gradient) 30%);
+  @include _576 {
+    padding-left: rem(40);
+  }
+  @include _768 {
+    padding-left: rem(60);
+  }
+  @include _1600 {
+    padding-left: rem(100);
+  }
   &__image {
     position: absolute;
     z-index: 0;
@@ -17,19 +25,12 @@
   &__content {
     position: absolute;
     z-index: 2;
-    top: 20vh;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &__title {
-    @include _576 {
-      font-size: rem(46);
-    }
-
     color: var(--color-second);
-    font-size: rem(36);
-    font-weight: 700;
-    line-height: 120%;
-
     span {
       color: var(--color-blue);
     }
@@ -39,10 +40,15 @@
     position: relative;
     margin-top: rem(40);
     color: var(--color-yellow);
-    font-size: rem(26);
+    font-size: rem(32);
     font-weight: 800;
     line-height: 120%;
-
+    @include _576 {
+      font-size: rem(42);
+    }
+    @include _768 {
+      font-size: rem(46);
+    }
     &::before {
       content: '';
       position: absolute;
@@ -52,6 +58,9 @@
       height: rem(3);
       background: var(--color-second);
       border-radius: var(--border-radius-x1);
+      @include _768 {
+        width: rem(88);
+      }
     }
   }
 }

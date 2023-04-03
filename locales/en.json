@@ -9,10 +9,6 @@
         "name": "experience"
       },
       {
-        "title": "Projects",
-        "name": "projects"
-      },
-      {
         "title": "Contacts",
         "name": "contacts"
       }
@@ -23,7 +19,7 @@
     "stack": "Vue / Nuxt"
   },
   "contacts": {
-    "title": "Take <span class='color-yellow'>the first step</span> on the path to development <span class='color-blue'>of your business</span>",
+    "title": "Take <span class='color-yellow'>the first step</span> on the path<br/> to development <span class='color-blue'>of your business</span>",
     "telegram": "Telegram",
     "social": "Social links",
     "email": "Email"
@@ -51,6 +47,9 @@
         "points": ["Jira", "Notion", "Webpack", "Gulp", "Git"]
       }
     ]
+  },
+  "project": {
+    "title": "Projects"
   },
   "work": {
     "title": "Work experience",

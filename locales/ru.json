@@ -9,10 +9,6 @@
         "name": "experience"
       },
       {
-        "title": "Проекты",
-        "name": "projects"
-      },
-      {
         "title": "Контакты",
         "name": "contacts"
       }
@@ -23,7 +19,7 @@
     "stack": "Vue / Nuxt"
   },
   "contacts": {
-    "title": "Сделайте <span class='color-yellow'>первый шаг </span> на пути к развитию <span class='color-blue'>вашего бизнеса</span>",
+    "title": "Сделайте <span class='color-yellow'>первый шаг </span><br/> на пути к развитию <span class='color-blue'>вашего бизнеса</span>",
     "telegram": "Телеграм",
     "social": "Полезное",
     "email": "Почта"
@@ -51,6 +47,9 @@
         "points": ["Jira", "Notion", "Webpack", "Gulp", "Git"]
       }
     ]
+  },
+  "project": {
+    "title": "Проекты"
   },
   "work": {
     "title": "Опыт работы",

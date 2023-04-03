@@ -10,7 +10,7 @@
     </div>
     <div class="container s-contacts__container">
       <div class="s-contacts__content">
-        <h2 class="s-contacts__title s-title" v-html="$t('contacts.title')"></h2>
+        <h2 class="s-contacts__title" v-html="$t('contacts.title')"></h2>
         <div class="s-contacts__block">
           <div class="s-contacts__item">
             <p class="s-contacts__item-title">{{ $t('contacts.telegram') }}</p>
