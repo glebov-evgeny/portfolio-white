@@ -3,6 +3,8 @@
   "resume": "Резюме",
   "language": "RU",
   "login": "Login",
+  "logout": "Logout",
+  "registration": "Registration",
   "header": {
     "nav": [
       {
@@ -14,6 +16,16 @@
         "name": "contacts"
       }
     ]
+  },
+  "form": {
+    "login": "Login",
+    "registration": "Registration",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "confirm": "I confirm to the sending, processing and storage of data",
+    "confirm2": "I confirm to the processing of data and agree to the privacy policy",
+    "or": "or"
   },
   "intro": {
     "title": "<span class='color-blue'>Frontent</span> <br/>developer",

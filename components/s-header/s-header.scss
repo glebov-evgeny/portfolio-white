@@ -70,11 +70,6 @@
       font-size: rem(18);
       transform: none;
       writing-mode: initial;
-      &:hover{
-        &:before{
-          width: 100%;
-        }
-      }
     }
     position: relative;
     margin: rem(10) 0;
@@ -83,16 +78,7 @@
     font-weight: 600;
     transform: rotate(-180deg);
     writing-mode: vertical-rl;
-    &:before{
-      content: '';
-      position: absolute;
-      bottom: rem(-2);
-      left: 0;
-      width: 0;
-      height: rem(2);
-      background: var(--color-main);
-      transition: .3s;
-    }
+    opacity: .1;
   }
   &__logic {
     @include _768 {

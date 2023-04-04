@@ -1,12 +1,6 @@
 <template>
   <section class="section-form">
-    <m-form
-      :title="$t('form.login')"
-      :button-text="$t('form.login')"
-      :submit-disabled="!validFlag"
-      :error="fbError"
-      @on-submit="loginUser"
-    >
+    <m-form :button-text="$t('form.login')" :submit-disabled="!validFlag" :error="fbError" @on-submit="loginUser">
       <template #inputs>
         <a-input id="popup-form-email" v-model="fieldsData.email" :placeholder="$t('form.email')" />
         <a-input

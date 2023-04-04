@@ -1,7 +1,6 @@
 <template>
   <section class="section-form">
     <m-form
-      :title="$t('form.registration')"
       :button-text="$t('form.registration')"
       :submit-disabled="!validFlag"
       :error="fbError"
