@@ -11,7 +11,7 @@
     position: relative;
     width: rem(16);
     height: rem(16);
-    background-color: var(--color-grey);
+    background-color: var(--color-second);
     cursor: pointer;
 
     &::before {
@@ -21,7 +21,7 @@
       left: 50%;
       width: rem(10);
       height: rem(10);
-      background: var(--color-swiper-active);
+      background: var(--color-main);
       transition: 0.2s;
       transform: translate(-50%, -50%) scale(0) rotate(-180deg);
     }
@@ -32,7 +32,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        background: var(--color-swiper-active);
+        background: var(--color-yellow);
         transform: translate(-50%, -50%) scale(1) rotate(0);
       }
     }
@@ -41,13 +41,9 @@
   &__text {
     flex: 1;
     margin-left: rem(8);
-    color: var(--color-control-text);
+    color: var(--color-second);
     font-size: rem(12);
     font-weight: 500;
     cursor: pointer;
-
-    &--contrast {
-      color: var(--color-control-text-contrast);
-    }
   }
 }

@@ -4,13 +4,11 @@
   align-items: center;
   width: 100%;
   min-height: rem(40);
-  background: var(--color-swiper);
+  background: var(--color-second);
   border: none;
   border-radius: var(--border-radius-x1);
   outline: none;
   text-align: center;
-  transition: all 0.3s ease;
-
   &:hover {
     cursor: pointer;
   }
@@ -23,11 +21,11 @@
   }
 
   &--accent {
-    background: var(--color-swiper-active);
+    background: var(--color-second);
   }
 
   &--disabled {
-    background: var(--color-grey);
+    opacity: .4;
     pointer-events: none;
   }
 }

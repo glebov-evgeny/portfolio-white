@@ -16,7 +16,7 @@
         {{ $t('form.confirm') }}
       </a-control>
     </div>
-    <p v-if="error" class="m-form__error">- {{ error }} -</p>
+    <p v-if="error" class="m-form__error">{{ error }}</p>
   </div>
 </template>
 

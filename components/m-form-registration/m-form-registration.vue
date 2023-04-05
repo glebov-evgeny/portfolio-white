@@ -18,11 +18,12 @@
     </m-form>
     <p class="m-form__direction">- {{ $t('form.or') }} -</p>
     <a-button class="m-form__change" :label="$t('form.login')" @click="changeForm" />
+    <a-button class="m-form__google" @click="googleLogin" />
   </section>
 </template>
 
 <script setup>
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, getAuth } from 'firebase/auth';
 import { useUserStore } from '~/store/user';
 const currentUser = useUserStore();
 const nuxtApp = useNuxtApp();
@@ -56,6 +57,28 @@ const checkedValidateError = () => {
   errors.password = /^([A-Z,0-9][-,a-z,0-9']+[ ]*)+$/i.test(fieldsData.password) && fieldsData.password.length > 5;
   return errors.email && errors.password;
 };
+
+const googleLogin = () => {
+  const provider = new GoogleAuthProvider();
+  const auth = getAuth();
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      // const credential = GoogleAuthProvider.credentialFromResult(result);
+      // const token = credential.accessToken;
+      const user = result.user;
+      console.log(user);
+      console.log(user.email);
+      currentUser.setUser(user.email, user.uid);
+      const cookieDataUser = { email: user.email, id: user.uid, maxAge: 60 * 60 * 24 * 7 };
+      userInformation.value = cookieDataUser;
+      router.push({ path: '/information' });
+      emit('onSend');
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+};
+
 watch(
   fieldsData,
   () => {
@@ -73,11 +96,7 @@ async function registerUser() {
     try {
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const { user } = await createUserWithEmailAndPassword(nuxtApp.$auth, fieldsData.email, fieldsData.password);
-      if (router.currentRoute.value.name === 'authorization') {
-        router.push({ path: '/presentation' });
-      } else {
-        router.push({ path: '/information' });
-      }
+      router.push({ path: '/information' });
       emit('onSend');
       currentUser.setUser(user.email, user.uid);
       /* устанавливаю куки с почтой и id пользователя на 7 дней */

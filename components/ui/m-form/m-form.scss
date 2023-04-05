@@ -1,24 +1,15 @@
 .m-form {
-  &__title {
-    width: calc(100% - rem(32));
-    margin-bottom: rem(16);
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: rem(24);
-    font-weight: 900;
-    line-height: 130%;
-    text-transform: uppercase;
-  }
-
-  &__inputs {
-    margin-bottom: rem(16);
-  }
 
   &__error {
     margin: rem(8) auto;
-    color: var(--color-swiper-active);
-    font-size: rem(14);
+    padding: var(--a-padding-x4) var(--a-padding-x2);
+    color: var(--color-second);
+    background: var(--color-yellow);
+    font-size: rem(12);
+    font-weight: 600;
     line-height: 120%;
     text-align: center;
+    border-radius: var(--border-radius-x3);
   }
 
   &__direction {
@@ -27,14 +18,28 @@
     line-height: 120%;
     text-align: center;
   }
-
+  &__checkbox{
+    margin-top: rem(24);
+  }
   &__change {
     background: transparent;
-    border: rem(1) solid var(--color-swiper);
-
+    border: rem(2) solid var(--color-yellow);
+    background: var(--color-main);
     span {
-      color: var(--color-swiper);
+      color: var(--color-yellow);
       font-size: rem(12);
     }
+  }
+  &__google{
+    background: transparent;
+    border: rem(2) solid var(--color-second);
+    margin: rem(16) auto 0;
+    width: rem(28);
+    min-height: rem(28);
+    background-image: url('/images/icons/social/google.png');
+    background-position: center;
+    background-size: rem(14);
+    background-repeat: no-repeat;
+
   }
 }

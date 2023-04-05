@@ -1,17 +1,20 @@
 .a-input {
   position: relative;
-
+  margin-bottom: rem(8);
   &__textfield {
     width: 100%;
     min-height: rem(40);
     padding: 0 rem(16);
     border: 0;
-    border-width: rem(1);
+    border-width: rem(2);
     border-style: solid;
-    border-color: var(--color-input-border);
+    background-color: var(--color-main);
+    border-color: var(--color-second);
     border-radius: var(--border-radius-x1);
+    color: var(--color-second);
     outline: none;
     font-size: rem(14);
+    font-weight: 500;
   }
 
   &--search {

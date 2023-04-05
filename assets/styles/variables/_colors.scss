@@ -17,6 +17,10 @@
     --color-gradient: #424242;
     --color-pink: #dd8c8c;
     --color-test1: #424242;
+    .m-form__google{
+      filter: invert(1);
+      border: rem(2) solid var(--color-main);
+    }
   }
 }
 /* stylelint-enable */
